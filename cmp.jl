@@ -22,6 +22,10 @@ function parse_parameters()::Args
     Args(args["c-output"], args["julia-output"])
 end
 
+function bar(i::Int)
+    string("[","#"^i, " "^(10-i), "]")
+end
+
 function main()
     args = parse_parameters()
     c = readlines(open(args.c))
@@ -45,21 +49,31 @@ function main()
         end
     end
 
-    Printf.@printf "%50s %14s %14s %14s %14s\n" "" "C" "Julia" "Abs Diff" "Rel Diff"
+    Printf.@printf "%50s %14s %14s %14s %14s %12s\n" "" "C" "Julia" "Abs Diff" "Rel Diff" "Rel as bar"
     for (c, jl) in zip(c_val, jl_val)
-        if jl[2] - c[2] < 0 # julia is faster
-            if (jl[2]-c[2])/c[2] < -0.5 # >50% faster
-                Printf.@printf "%50s %14.10f %14.10f \e[37;42m%14.10f %14.10f\e[0m\n" c[1] c[2] jl[2] (jl[2]-c[2]) (jl[2]-c[2])/c[2]
+        absolute = jl[2] - c[2]
+        relative = absolute / c[2]
+        abs_rel = abs(relative)
+        if abs_rel >= 1
+            cnt = 10
+        elseif abs_rel < 10e-9
+            cnt = 0
+        else
+            cnt = floor(Int64, 10 * round(abs_rel, digits=1))
+        end
+        if absolute < 0 # julia is faster
+            if relative < -0.5 # >50% faster
+                Printf.@printf "%50s %14.10f %14.10f \e[37;42m%14.10f %14.10f %12s\e[0m\n" c[1] c[2] jl[2] absolute relative bar(cnt)
             else
-                Printf.@printf "%50s %14.10f %14.10f \e[32m%14.10f %14.10f\e[0m\n" c[1] c[2] jl[2] (jl[2]-c[2]) (jl[2]-c[2])/c[2]
+                Printf.@printf "%50s %14.10f %14.10f \e[32m%14.10f %14.10f %12s\e[0m\n" c[1] c[2] jl[2] absolute relative bar(cnt)
             end
-        elseif abs(jl[2] - c[2]) < 10e-9 # roughly equal
-            Printf.@printf "%50s %14.10f %14.10f %14.10f %14.10f\n" c[1] c[2] jl[2] (jl[2]-c[2]) (jl[2]-c[2])/c[2]
+        elseif abs(absolute) < 10e-9 # roughly equal
+            Printf.@printf "%50s %14.10f %14.10f %14.10f %14.10f %12s\n" c[1] c[2] jl[2] absolute relative bar(cnt)
         else # c is faster
-            if (jl[2]-c[2])/c[2] > 0.5 # >50% faster
-                Printf.@printf "%50s %14.10f %14.10f \e[37;41m%14.10f %14.10f\e[0m\n" c[1] c[2] jl[2] (jl[2]-c[2]) (jl[2]-c[2])/c[2]
+            if relative > 0.5 # >50% faster
+                Printf.@printf "%50s %14.10f %14.10f \e[37;41m%14.10f %14.10f %12s\e[0m\n" c[1] c[2] jl[2] absolute relative bar(cnt)
             else
-                Printf.@printf "%50s %14.10f %14.10f \e[31m%14.10f %14.10f\e[0m\n" c[1] c[2] jl[2] (jl[2]-c[2]) (jl[2]-c[2])/c[2]
+                Printf.@printf "%50s %14.10f %14.10f \e[31m%14.10f %14.10f %12s\e[0m\n" c[1] c[2] jl[2] absolute relative bar(cnt)
             end
         end
     end
