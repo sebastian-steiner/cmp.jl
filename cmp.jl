@@ -11,15 +11,22 @@ function parse_parameters()::Args
     @add_arg_table! s begin
         "--c-output", "-c"
             help = "file in which c output is stored"
-            required = true
             arg_type = String
         "--julia-output", "-j"
             help = "file in which julia output is stored"
-            required = true
             arg_type = String
     end
     args = parse_args(ARGS, s)
-    Args(args["c-output"], args["julia-output"])
+    c = args["c-output"]
+    jl = args["julia-output"]
+    if c == nothing && jl == nothing
+        error("At least one of -c and -j needs to be given")
+    elseif c == nothing
+        c = string("c", jl[3:end])
+    elseif jl == nothing
+        jl = string("jl", c[2:end])
+    end
+    Args(c, jl)
 end
 
 function bar(i::Int)
@@ -28,6 +35,11 @@ end
 
 function main()
     args = parse_parameters()
+    
+    println("#Comparing files:")
+    println("#C:\t\t", args.c)
+    println("#Julia:\t\t", args.jl)
+
     c = readlines(open(args.c))
     jl = readlines(open(args.jl))
     c = c[findfirst(s->occursin("runtime_sec", s), c)+1:end]
