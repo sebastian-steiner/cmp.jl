@@ -80,7 +80,7 @@ function main()
         relative = absolute / c[2]
         if absolute < 0 # julia is faster
             if relative < -0.5 # >50% faster
-                Printf.@printf "%50s %14.10f %14.10f \e[37;42m%14.10f %14.10f %s\e[0m\n" c[1] c[2] jl[2] absolute relative bar(relative, args.bar)
+                Printf.@printf "%50s %14.10f %14.10f \e[30;102m%14.10f %14.10f %s\e[0m\n" c[1] c[2] jl[2] absolute relative bar(relative, args.bar)
             else
                 Printf.@printf "%50s %14.10f %14.10f \e[32m%14.10f %14.10f %s\e[0m\n" c[1] c[2] jl[2] absolute relative bar(relative, args.bar)
             end
