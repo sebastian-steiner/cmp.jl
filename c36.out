@@ -1,0 +1,652 @@
+Built target mpibenchmark
+Built target mpibenchmark
+Built target mpibenchmark
+[ 29%] Built target mpibenchmark
+Built target mpibenchmark
+Built target mpibenchPredNreps
+Built target mpibenchmark
+Built target mpibenchmark
+Built target mpibenchmark
+[ 31%] Built target mpibenchmark
+Built target mpibenchPredNreps
+Built target mpibenchmark
+Built target mpibenchmark
+Built target mpibenchPredNreps
+Built target mpibenchmark
+[ 35%] Built target mpibenchmark
+[ 34%] Built target mpibenchmark
+[ 34%] Built target mpibenchmark
+[ 35%] Built target mpibenchmark
+[ 35%] Built target mpibenchmark
+Built target mpibenchPredNreps
+[ 33%] Built target mpibenchmark
+[ 33%] Built target mpibenchmark
+[ 35%] Built target mpibenchmark
+[ 38%] Built target mpibenchmark
+Built target nrep_pred
+[ 37%] Built target mpibenchmark
+[ 39%] Built target mpibenchmark
+[ 38%] Built target mpibenchmark
+[ 37%] Built target mpibenchmark
+[ 40%] Built target mpibenchmark
+[ 44%] Built target mpibenchmark
+[ 45%] Built target mpibenchmark
+[ 46%] Built target mpibenchmark
+[ 50%] Built target mpibenchPredNreps
+Built target nrep_pred
+Built target nrep_pred
+Built target mpibenchPredNreps
+Built target nrep_pred
+Built target verify_clock
+Built target mpibenchmark
+[ 65%] Built target mpibenchmark
+Built target mpibenchPredNreps
+Built target mpibenchPredNreps
+Built target mpibenchPredNreps
+Built target verify_clock
+[ 49%] Built target mpibenchPredNreps
+Built target mpibenchPredNreps
+Built target verify_clock
+Built target mpibenchmark
+Built target nrep_pred
+Built target verify_clock
+[ 47%] Built target mpibenchPredNreps
+[ 45%] Built target mpibenchPredNreps
+[ 36%] Built target mpibenchPredNreps
+Built target nrep_pred
+[ 38%] Built target mpibenchPredNreps
+Built target verify_clock
+[ 39%] Built target mpibenchPredNreps
+[ 37%] Built target mpibenchPredNreps
+[ 38%] Built target mpibenchPredNreps
+[ 36%] Built target mpibenchPredNreps
+Built target nrep_pred
+Built target nrep_pred
+[ 36%] Built target mpibenchPredNreps
+Built target nrep_pred
+[ 35%] Built target mpibenchPredNreps
+[ 35%] Built target mpibenchPredNreps
+[ 36%] Built target mpibenchPredNreps
+Built target mpibenchPredNreps
+[ 27%] Built target mpibenchPredNreps
+[ 25%] Built target mpibenchPredNreps
+[ 24%] Built target mpibenchPredNreps
+[ 26%] Built target mpibenchPredNreps
+Built target nrep_pred
+Built target nrep_pred
+[ 22%] Built target mpibenchmark
+[ 19%] Built target mpibenchPredNreps
+[ 19%] Built target mpibenchmark
+Built target nrep_pred
+Built target mpibenchPredNreps
+Built target mpibenchPredNreps
+Built target nrep_pred
+Built target verify_clock
+[ 16%] Built target mpibenchPredNreps
+Built target nrep_pred
+Built target verify_clock
+Built target verify_clock
+Built target nrep_pred
+Built target verify_clock
+Built target mpibenchmark
+Built target nrep_pred
+Built target nrep_pred
+Built target nrep_pred
+Built target nrep_pred
+Built target nrep_pred
+Built target nrep_pred
+Built target nrep_pred
+Built target verify_clock
+Built target nrep_pred
+Built target verify_clock
+Built target nrep_pred
+Built target verify_clock
+Built target nrep_pred
+Built target nrep_pred
+Built target nrep_pred
+Built target nrep_pred
+Built target verify_clock
+Built target nrep_pred
+Built target mpibenchPredNreps
+Built target nrep_pred
+Built target verify_clock
+Built target verify_clock
+Built target mpibenchPredNreps
+Built target nrep_pred
+Built target verify_clock
+Built target nrep_pred
+Built target verify_clock
+Built target verify_clock
+Built target verify_clock
+Built target verify_clock
+Built target verify_clock
+Built target verify_clock
+Built target verify_clock
+Built target verify_clock
+Built target verify_clock
+Built target verify_clock
+Built target verify_clock
+Built target verify_clock
+Built target mpibenchPredNreps
+Built target verify_clock
+Built target verify_clock
+Built target verify_clock
+Built target verify_clock
+Built target nrep_pred
+Built target nrep_pred
+Built target nrep_pred
+Built target verify_clock
+Built target verify_clock
+Built target verify_clock
+[ 31%] Built target mpibenchmark
+[ 66%] Built target mpibenchPredNreps
+[ 97%] Built target nrep_pred
+[100%] Built target verify_clock
+#Command-line arguments:  /home/thesis/steiner/reprompi/./bin/mpibenchmark --calls-list=MPI_Bcast,MPI_Alltoall,MPI_Allreduce --msizes-list=1,4,16,128,1024,10240,102400,1024000 --nrep=20
+#MPI calls:
+#	MPI_Bcast
+#	MPI_Alltoall
+#	MPI_Allreduce
+#Message sizes:
+#	1
+#	4
+#	16
+#	128
+#	1024
+#	10240
+#	102400
+#	1024000
+#@operation=MPI_BOR
+#@datatype=MPI_BYTE
+#@datatype_extent_bytes=1
+#@datatype_size_bytes=1
+#@root_proc=0
+#@reproMPIcommitSHA1=00325471f9a39c5ffc35796f360fb02838cbef84
+#@nprocs=36
+#@clocktype=local
+#@clock=MPI_Wtime
+#@sync=MPI_Barrier
+#@nrep=20
+                                              test       nrep        count    runtime_sec 
+                                         MPI_Bcast          0            1   0.0000104355
+                                         MPI_Bcast          1            1   0.0000070352
+                                         MPI_Bcast          2            1   0.0000067810
+                                         MPI_Bcast          3            1   0.0000071656
+                                         MPI_Bcast          4            1   0.0000078557
+                                         MPI_Bcast          5            1   0.0000071060
+                                         MPI_Bcast          6            1   0.0000061886
+                                         MPI_Bcast          7            1   0.0000079097
+                                         MPI_Bcast          8            1   0.0000067251
+                                         MPI_Bcast          9            1   0.0000075679
+                                         MPI_Bcast         10            1   0.0000073835
+                                         MPI_Bcast         11            1   0.0000068042
+                                         MPI_Bcast         12            1   0.0000066347
+                                         MPI_Bcast         13            1   0.0000067800
+                                         MPI_Bcast         14            1   0.0000075791
+                                         MPI_Bcast         15            1   0.0000076313
+                                         MPI_Bcast         16            1   0.0000070389
+                                         MPI_Bcast         17            1   0.0000067176
+                                         MPI_Bcast         18            1   0.0000065928
+                                         MPI_Bcast         19            1   0.0000068303
+                                      MPI_Alltoall          0            1   0.0000430252
+                                      MPI_Alltoall          1            1   0.0000291942
+                                      MPI_Alltoall          2            1   0.0000283206
+                                      MPI_Alltoall          3            1   0.0000186162
+                                      MPI_Alltoall          4            1   0.0000252714
+                                      MPI_Alltoall          5            1   0.0000191992
+                                      MPI_Alltoall          6            1   0.0000182800
+                                      MPI_Alltoall          7            1   0.0000184057
+                                      MPI_Alltoall          8            1   0.0000193557
+                                      MPI_Alltoall          9            1   0.0000175750
+                                      MPI_Alltoall         10            1   0.0000183713
+                                      MPI_Alltoall         11            1   0.0000187457
+                                      MPI_Alltoall         12            1   0.0000175592
+                                      MPI_Alltoall         13            1   0.0000165030
+                                      MPI_Alltoall         14            1   0.0000171997
+                                      MPI_Alltoall         15            1   0.0000189245
+                                      MPI_Alltoall         16            1   0.0000204118
+                                      MPI_Alltoall         17            1   0.0000210814
+                                      MPI_Alltoall         18            1   0.0000167070
+                                      MPI_Alltoall         19            1   0.0000222418
+                                     MPI_Allreduce          0            1   0.0003013667
+                                     MPI_Allreduce          1            1   0.0000105966
+                                     MPI_Allreduce          2            1   0.0000103284
+                                     MPI_Allreduce          3            1   0.0000111880
+                                     MPI_Allreduce          4            1   0.0000096308
+                                     MPI_Allreduce          5            1   0.0000101738
+                                     MPI_Allreduce          6            1   0.0000095954
+                                     MPI_Allreduce          7            1   0.0000116061
+                                     MPI_Allreduce          8            1   0.0000134651
+                                     MPI_Allreduce          9            1   0.0000101896
+                                     MPI_Allreduce         10            1   0.0000103582
+                                     MPI_Allreduce         11            1   0.0000095423
+                                     MPI_Allreduce         12            1   0.0000103358
+                                     MPI_Allreduce         13            1   0.0000101449
+                                     MPI_Allreduce         14            1   0.0000104345
+                                     MPI_Allreduce         15            1   0.0000120075
+                                     MPI_Allreduce         16            1   0.0000113901
+                                     MPI_Allreduce         17            1   0.0000108052
+                                     MPI_Allreduce         18            1   0.0000094688
+                                     MPI_Allreduce         19            1   0.0000090757
+                                         MPI_Bcast          0            4   0.0000090105
+                                         MPI_Bcast          1            4   0.0000073528
+                                         MPI_Bcast          2            4   0.0000087665
+                                         MPI_Bcast          3            4   0.0000071768
+                                         MPI_Bcast          4            4   0.0000074860
+                                         MPI_Bcast          5            4   0.0000065556
+                                         MPI_Bcast          6            4   0.0000066180
+                                         MPI_Bcast          7            4   0.0000066096
+                                         MPI_Bcast          8            4   0.0000071367
+                                         MPI_Bcast          9            4   0.0000067614
+                                         MPI_Bcast         10            4   0.0000076750
+                                         MPI_Bcast         11            4   0.0000064652
+                                         MPI_Bcast         12            4   0.0000068611
+                                         MPI_Bcast         13            4   0.0000072317
+                                         MPI_Bcast         14            4   0.0000069384
+                                         MPI_Bcast         15            4   0.0000063693
+                                         MPI_Bcast         16            4   0.0000069169
+                                         MPI_Bcast         17            4   0.0000073304
+                                         MPI_Bcast         18            4   0.0000078902
+                                         MPI_Bcast         19            4   0.0000070697
+                                      MPI_Alltoall          0            4   0.0000282861
+                                      MPI_Alltoall          1            4   0.0000185147
+                                      MPI_Alltoall          2            4   0.0000222893
+                                      MPI_Alltoall          3            4   0.0000175973
+                                      MPI_Alltoall          4            4   0.0000172313
+                                      MPI_Alltoall          5            4   0.0000190400
+                                      MPI_Alltoall          6            4   0.0000168094
+                                      MPI_Alltoall          7            4   0.0000169817
+                                      MPI_Alltoall          8            4   0.0000171177
+                                      MPI_Alltoall          9            4   0.0000224849
+                                      MPI_Alltoall         10            4   0.0000168514
+                                      MPI_Alltoall         11            4   0.0000182735
+                                      MPI_Alltoall         12            4   0.0000199275
+                                      MPI_Alltoall         13            4   0.0000168420
+                                      MPI_Alltoall         14            4   0.0000172164
+                                      MPI_Alltoall         15            4   0.0000171037
+                                      MPI_Alltoall         16            4   0.0000171168
+                                      MPI_Alltoall         17            4   0.0000168895
+                                      MPI_Alltoall         18            4   0.0000170460
+                                      MPI_Alltoall         19            4   0.0000168197
+                                     MPI_Allreduce          0            4   0.0000105081
+                                     MPI_Allreduce          1            4   0.0000094119
+                                     MPI_Allreduce          2            4   0.0000100182
+                                     MPI_Allreduce          3            4   0.0000105621
+                                     MPI_Allreduce          4            4   0.0000098478
+                                     MPI_Allreduce          5            4   0.0000106394
+                                     MPI_Allreduce          6            4   0.0000096792
+                                     MPI_Allreduce          7            4   0.0000143480
+                                     MPI_Allreduce          8            4   0.0000091707
+                                     MPI_Allreduce          9            4   0.0000102231
+                                     MPI_Allreduce         10            4   0.0000091363
+                                     MPI_Allreduce         11            4   0.0000105370
+                                     MPI_Allreduce         12            4   0.0000098012
+                                     MPI_Allreduce         13            4   0.0000105565
+                                     MPI_Allreduce         14            4   0.0000110585
+                                     MPI_Allreduce         15            4   0.0000114571
+                                     MPI_Allreduce         16            4   0.0000107689
+                                     MPI_Allreduce         17            4   0.0000102939
+                                     MPI_Allreduce         18            4   0.0000094064
+                                     MPI_Allreduce         19            4   0.0000097184
+                                         MPI_Bcast          0           16   0.0000094566
+                                         MPI_Bcast          1           16   0.0000094473
+                                         MPI_Bcast          2           16   0.0000089789
+                                         MPI_Bcast          3           16   0.0000093905
+                                         MPI_Bcast          4           16   0.0000091037
+                                         MPI_Bcast          5           16   0.0000092015
+                                         MPI_Bcast          6           16   0.0000093030
+                                         MPI_Bcast          7           16   0.0000089277
+                                         MPI_Bcast          8           16   0.0000091186
+                                         MPI_Bcast          9           16   0.0000141039
+                                         MPI_Bcast         10           16   0.0000091167
+                                         MPI_Bcast         11           16   0.0000098543
+                                         MPI_Bcast         12           16   0.0000090469
+                                         MPI_Bcast         13           16   0.0000091726
+                                         MPI_Bcast         14           16   0.0000092257
+                                         MPI_Bcast         15           16   0.0000098450
+                                         MPI_Bcast         16           16   0.0000099679
+                                         MPI_Bcast         17           16   0.0000093142
+                                         MPI_Bcast         18           16   0.0000087954
+                                         MPI_Bcast         19           16   0.0000090161
+                                      MPI_Alltoall          0           16   0.0000276417
+                                      MPI_Alltoall          1           16   0.0000268519
+                                      MPI_Alltoall          2           16   0.0000180574
+                                      MPI_Alltoall          3           16   0.0000175610
+                                      MPI_Alltoall          4           16   0.0000172434
+                                      MPI_Alltoall          5           16   0.0000174269
+                                      MPI_Alltoall          6           16   0.0000173906
+                                      MPI_Alltoall          7           16   0.0000170851
+                                      MPI_Alltoall          8           16   0.0000171894
+                                      MPI_Alltoall          9           16   0.0000224914
+                                      MPI_Alltoall         10           16   0.0000228668
+                                      MPI_Alltoall         11           16   0.0000169836
+                                      MPI_Alltoall         12           16   0.0000171466
+                                      MPI_Alltoall         13           16   0.0000182111
+                                      MPI_Alltoall         14           16   0.0000170274
+                                      MPI_Alltoall         15           16   0.0000216682
+                                      MPI_Alltoall         16           16   0.0000171326
+                                      MPI_Alltoall         17           16   0.0000175182
+                                      MPI_Alltoall         18           16   0.0000175182
+                                      MPI_Alltoall         19           16   0.0000172006
+                                     MPI_Allreduce          0           16   0.0000121957
+                                     MPI_Allreduce          1           16   0.0000108778
+                                     MPI_Allreduce          2           16   0.0000120150
+                                     MPI_Allreduce          3           16   0.0000118045
+                                     MPI_Allreduce          4           16   0.0000121631
+                                     MPI_Allreduce          5           16   0.0000115708
+                                     MPI_Allreduce          6           16   0.0000114767
+                                     MPI_Allreduce          7           16   0.0000109505
+                                     MPI_Allreduce          8           16   0.0000129351
+                                     MPI_Allreduce          9           16   0.0000111461
+                                     MPI_Allreduce         10           16   0.0000132015
+                                     MPI_Allreduce         11           16   0.0000134790
+                                     MPI_Allreduce         12           16   0.0000109486
+                                     MPI_Allreduce         13           16   0.0000103582
+                                     MPI_Allreduce         14           16   0.0000116844
+                                     MPI_Allreduce         15           16   0.0000137482
+                                     MPI_Allreduce         16           16   0.0000115251
+                                     MPI_Allreduce         17           16   0.0000118064
+                                     MPI_Allreduce         18           16   0.0000110138
+                                     MPI_Allreduce         19           16   0.0000107447
+                                         MPI_Bcast          0          128   0.0000133719
+                                         MPI_Bcast          1          128   0.0000100080
+                                         MPI_Bcast          2          128   0.0000101868
+                                         MPI_Bcast          3          128   0.0000100955
+                                         MPI_Bcast          4          128   0.0000098776
+                                         MPI_Bcast          5          128   0.0000098860
+                                         MPI_Bcast          6          128   0.0000097388
+                                         MPI_Bcast          7          128   0.0000098664
+                                         MPI_Bcast          8          128   0.0000096280
+                                         MPI_Bcast          9          128   0.0000109160
+                                         MPI_Bcast         10          128   0.0000096858
+                                         MPI_Bcast         11          128   0.0000099745
+                                         MPI_Bcast         12          128   0.0000100629
+                                         MPI_Bcast         13          128   0.0000099773
+                                         MPI_Bcast         14          128   0.0000090431
+                                         MPI_Bcast         15          128   0.0000098282
+                                         MPI_Bcast         16          128   0.0000116024
+                                         MPI_Bcast         17          128   0.0000100043
+                                         MPI_Bcast         18          128   0.0000095256
+                                         MPI_Bcast         19          128   0.0000095190
+                                      MPI_Alltoall          0          128   0.0000367071
+                                      MPI_Alltoall          1          128   0.0000223294
+                                      MPI_Alltoall          2          128   0.0000224933
+                                      MPI_Alltoall          3          128   0.0000212854
+                                      MPI_Alltoall          4          128   0.0000262540
+                                      MPI_Alltoall          5          128   0.0000214335
+                                      MPI_Alltoall          6          128   0.0000214269
+                                      MPI_Alltoall          7          128   0.0000215210
+                                      MPI_Alltoall          8          128   0.0000216560
+                                      MPI_Alltoall          9          128   0.0000211652
+                                      MPI_Alltoall         10          128   0.0000214037
+                                      MPI_Alltoall         11          128   0.0000213962
+                                      MPI_Alltoall         12          128   0.0000216579
+                                      MPI_Alltoall         13          128   0.0000217939
+                                      MPI_Alltoall         14          128   0.0000214390
+                                      MPI_Alltoall         15          128   0.0000260780
+                                      MPI_Alltoall         16          128   0.0000232076
+                                      MPI_Alltoall         17          128   0.0000217268
+                                      MPI_Alltoall         18          128   0.0000257175
+                                      MPI_Alltoall         19          128   0.0000213245
+                                     MPI_Allreduce          0          128   0.0000126986
+                                     MPI_Allreduce          1          128   0.0000122013
+                                     MPI_Allreduce          2          128   0.0000141272
+                                     MPI_Allreduce          3          128   0.0000119684
+                                     MPI_Allreduce          4          128   0.0000138804
+                                     MPI_Allreduce          5          128   0.0000119964
+                                     MPI_Allreduce          6          128   0.0000124853
+                                     MPI_Allreduce          7          128   0.0000123112
+                                     MPI_Allreduce          8          128   0.0000123782
+                                     MPI_Allreduce          9          128   0.0000123177
+                                     MPI_Allreduce         10          128   0.0000120355
+                                     MPI_Allreduce         11          128   0.0000117170
+                                     MPI_Allreduce         12          128   0.0000108527
+                                     MPI_Allreduce         13          128   0.0000115447
+                                     MPI_Allreduce         14          128   0.0000129426
+                                     MPI_Allreduce         15          128   0.0000119703
+                                     MPI_Allreduce         16          128   0.0000128886
+                                     MPI_Allreduce         17          128   0.0000117626
+                                     MPI_Allreduce         18          128   0.0000120848
+                                     MPI_Allreduce         19          128   0.0000118157
+                                         MPI_Bcast          0         1024   0.0000111423
+                                         MPI_Bcast          1         1024   0.0000115344
+                                         MPI_Bcast          2         1024   0.0000116052
+                                         MPI_Bcast          3         1024   0.0000107270
+                                         MPI_Bcast          4         1024   0.0000111992
+                                         MPI_Bcast          5         1024   0.0000111395
+                                         MPI_Bcast          6         1024   0.0000113808
+                                         MPI_Bcast          7         1024   0.0000115344
+                                         MPI_Bcast          8         1024   0.0000111694
+                                         MPI_Bcast          9         1024   0.0000124574
+                                         MPI_Bcast         10         1024   0.0000105929
+                                         MPI_Bcast         11         1024   0.0000111936
+                                         MPI_Bcast         12         1024   0.0000112997
+                                         MPI_Bcast         13         1024   0.0000190940
+                                         MPI_Bcast         14         1024   0.0000111889
+                                         MPI_Bcast         15         1024   0.0000112811
+                                         MPI_Bcast         16         1024   0.0000112131
+                                         MPI_Bcast         17         1024   0.0000114450
+                                         MPI_Bcast         18         1024   0.0000111815
+                                         MPI_Bcast         19         1024   0.0000105286
+                                      MPI_Alltoall          0         1024   0.0018285178
+                                      MPI_Alltoall          1         1024   0.0000357898
+                                      MPI_Alltoall          2         1024   0.0000340967
+                                      MPI_Alltoall          3         1024   0.0000341395
+                                      MPI_Alltoall          4         1024   0.0000393474
+                                      MPI_Alltoall          5         1024   0.0000393456
+                                      MPI_Alltoall          6         1024   0.0000336114
+                                      MPI_Alltoall          7         1024   0.0000520293
+                                      MPI_Alltoall          8         1024   0.0000334010
+                                      MPI_Alltoall          9         1024   0.0000329474
+                                      MPI_Alltoall         10         1024   0.0000393689
+                                      MPI_Alltoall         11         1024   0.0000334848
+                                      MPI_Alltoall         12         1024   0.0000333833
+                                      MPI_Alltoall         13         1024   0.0000335164
+                                      MPI_Alltoall         14         1024   0.0000332976
+                                      MPI_Alltoall         15         1024   0.0000394071
+                                      MPI_Alltoall         16         1024   0.0000335146
+                                      MPI_Alltoall         17         1024   0.0000329232
+                                      MPI_Alltoall         18         1024   0.0000398001
+                                      MPI_Alltoall         19         1024   0.0000342550
+                                     MPI_Allreduce          0         1024   0.0000215340
+                                     MPI_Allreduce          1         1024   0.0000257846
+                                     MPI_Allreduce          2         1024   0.0000176998
+                                     MPI_Allreduce          3         1024   0.0000183219
+                                     MPI_Allreduce          4         1024   0.0000182539
+                                     MPI_Allreduce          5         1024   0.0000187214
+                                     MPI_Allreduce          6         1024   0.0000194237
+                                     MPI_Allreduce          7         1024   0.0000193743
+                                     MPI_Allreduce          8         1024   0.0000196742
+                                     MPI_Allreduce          9         1024   0.0000194414
+                                     MPI_Allreduce         10         1024   0.0000192393
+                                     MPI_Allreduce         11         1024   0.0000184076
+                                     MPI_Allreduce         12         1024   0.0000188705
+                                     MPI_Allreduce         13         1024   0.0000229198
+                                     MPI_Allreduce         14         1024   0.0000240356
+                                     MPI_Allreduce         15         1024   0.0000186861
+                                     MPI_Allreduce         16         1024   0.0000221860
+                                     MPI_Allreduce         17         1024   0.0000191974
+                                     MPI_Allreduce         18         1024   0.0000180556
+                                     MPI_Allreduce         19         1024   0.0000179382
+                                         MPI_Bcast          0        10240   0.0000216179
+                                         MPI_Bcast          1        10240   0.0000289008
+                                         MPI_Bcast          2        10240   0.0000189515
+                                         MPI_Bcast          3        10240   0.0000200467
+                                         MPI_Bcast          4        10240   0.0000194293
+                                         MPI_Bcast          5        10240   0.0000191573
+                                         MPI_Bcast          6        10240   0.0000184672
+                                         MPI_Bcast          7        10240   0.0000197720
+                                         MPI_Bcast          8        10240   0.0000195112
+                                         MPI_Bcast          9        10240   0.0000193007
+                                         MPI_Bcast         10        10240   0.0000184420
+                                         MPI_Bcast         11        10240   0.0000178833
+                                         MPI_Bcast         12        10240   0.0000180872
+                                         MPI_Bcast         13        10240   0.0000200439
+                                         MPI_Bcast         14        10240   0.0000163764
+                                         MPI_Bcast         15        10240   0.0000191219
+                                         MPI_Bcast         16        10240   0.0000198260
+                                         MPI_Bcast         17        10240   0.0000189384
+                                         MPI_Bcast         18        10240   0.0000180583
+                                         MPI_Bcast         19        10240   0.0000190809
+                                      MPI_Alltoall          0        10240   0.0009120479
+                                      MPI_Alltoall          1        10240   0.0002364712
+                                      MPI_Alltoall          2        10240   0.0002590334
+                                      MPI_Alltoall          3        10240   0.0002876492
+                                      MPI_Alltoall          4        10240   0.0002559926
+                                      MPI_Alltoall          5        10240   0.0002520932
+                                      MPI_Alltoall          6        10240   0.0002544634
+                                      MPI_Alltoall          7        10240   0.0002324758
+                                      MPI_Alltoall          8        10240   0.0002307845
+                                      MPI_Alltoall          9        10240   0.0002504745
+                                      MPI_Alltoall         10        10240   0.0002649706
+                                      MPI_Alltoall         11        10240   0.0002474524
+                                      MPI_Alltoall         12        10240   0.0002559535
+                                      MPI_Alltoall         13        10240   0.0002501635
+                                      MPI_Alltoall         14        10240   0.0002543386
+                                      MPI_Alltoall         15        10240   0.0002511926
+                                      MPI_Alltoall         16        10240   0.0002396936
+                                      MPI_Alltoall         17        10240   0.0002417043
+                                      MPI_Alltoall         18        10240   0.0002393220
+                                      MPI_Alltoall         19        10240   0.0002688263
+                                     MPI_Allreduce          0        10240   0.0001266068
+                                     MPI_Allreduce          1        10240   0.0001186840
+                                     MPI_Allreduce          2        10240   0.0001259400
+                                     MPI_Allreduce          3        10240   0.0001218691
+                                     MPI_Allreduce          4        10240   0.0001326995
+                                     MPI_Allreduce          5        10240   0.0001182724
+                                     MPI_Allreduce          6        10240   0.0001579029
+                                     MPI_Allreduce          7        10240   0.0001243940
+                                     MPI_Allreduce          8        10240   0.0001188777
+                                     MPI_Allreduce          9        10240   0.0001169965
+                                     MPI_Allreduce         10        10240   0.0001249928
+                                     MPI_Allreduce         11        10240   0.0001239879
+                                     MPI_Allreduce         12        10240   0.0001242869
+                                     MPI_Allreduce         13        10240   0.0001164833
+                                     MPI_Allreduce         14        10240   0.0001275381
+                                     MPI_Allreduce         15        10240   0.0001334837
+                                     MPI_Allreduce         16        10240   0.0001240503
+                                     MPI_Allreduce         17        10240   0.0001180964
+                                     MPI_Allreduce         18        10240   0.0001293039
+                                     MPI_Allreduce         19        10240   0.0001176102
+                                         MPI_Bcast          0       102400   0.0001579970
+                                         MPI_Bcast          1       102400   0.0000890372
+                                         MPI_Bcast          2       102400   0.0000878442
+                                         MPI_Bcast          3       102400   0.0000883974
+                                         MPI_Bcast          4       102400   0.0001008920
+                                         MPI_Bcast          5       102400   0.0000861501
+                                         MPI_Bcast          6       102400   0.0000860067
+                                         MPI_Bcast          7       102400   0.0000848062
+                                         MPI_Bcast          8       102400   0.0000962755
+                                         MPI_Bcast          9       102400   0.0000867350
+                                         MPI_Bcast         10       102400   0.0000875313
+                                         MPI_Bcast         11       102400   0.0000853036
+                                         MPI_Bcast         12       102400   0.0001043677
+                                         MPI_Bcast         13       102400   0.0000839215
+                                         MPI_Bcast         14       102400   0.0000847122
+                                         MPI_Bcast         15       102400   0.0000864249
+                                         MPI_Bcast         16       102400   0.0000842325
+                                         MPI_Bcast         17       102400   0.0000901353
+                                         MPI_Bcast         18       102400   0.0000858475
+                                         MPI_Bcast         19       102400   0.0000860989
+                                      MPI_Alltoall          0       102400   0.0076610632
+                                      MPI_Alltoall          1       102400   0.0024057282
+                                      MPI_Alltoall          2       102400   0.0017751297
+                                      MPI_Alltoall          3       102400   0.0012100693
+                                      MPI_Alltoall          4       102400   0.0012185704
+                                      MPI_Alltoall          5       102400   0.0012269896
+                                      MPI_Alltoall          6       102400   0.0012023682
+                                      MPI_Alltoall          7       102400   0.0011996143
+                                      MPI_Alltoall          8       102400   0.0012334026
+                                      MPI_Alltoall          9       102400   0.0011986671
+                                      MPI_Alltoall         10       102400   0.0012017405
+                                      MPI_Alltoall         11       102400   0.0012107966
+                                      MPI_Alltoall         12       102400   0.0012280876
+                                      MPI_Alltoall         13       102400   0.0012190444
+                                      MPI_Alltoall         14       102400   0.0012170179
+                                      MPI_Alltoall         15       102400   0.0011945898
+                                      MPI_Alltoall         16       102400   0.0012236135
+                                      MPI_Alltoall         17       102400   0.0012201453
+                                      MPI_Alltoall         18       102400   0.0011960035
+                                      MPI_Alltoall         19       102400   0.0012016054
+                                     MPI_Allreduce          0       102400   0.0002649873
+                                     MPI_Allreduce          1       102400   0.0002584290
+                                     MPI_Allreduce          2       102400   0.0002611261
+                                     MPI_Allreduce          3       102400   0.0002667857
+                                     MPI_Allreduce          4       102400   0.0002588639
+                                     MPI_Allreduce          5       102400   0.0002615442
+                                     MPI_Allreduce          6       102400   0.0002682973
+                                     MPI_Allreduce          7       102400   0.0002651867
+                                     MPI_Allreduce          8       102400   0.0002786163
+                                     MPI_Allreduce          9       102400   0.0002614697
+                                     MPI_Allreduce         10       102400   0.0002931273
+                                     MPI_Allreduce         11       102400   0.0002758447
+                                     MPI_Allreduce         12       102400   0.0002630986
+                                     MPI_Allreduce         13       102400   0.0002603400
+                                     MPI_Allreduce         14       102400   0.0002596881
+                                     MPI_Allreduce         15       102400   0.0002580211
+                                     MPI_Allreduce         16       102400   0.0002614828
+                                     MPI_Allreduce         17       102400   0.0002742838
+                                     MPI_Allreduce         18       102400   0.0002608104
+                                     MPI_Allreduce         19       102400   0.0002611047
+                                         MPI_Bcast          0      1024000   0.0007833410
+                                         MPI_Bcast          1      1024000   0.0007959092
+                                         MPI_Bcast          2      1024000   0.0007841177
+                                         MPI_Bcast          3      1024000   0.0008039270
+                                         MPI_Bcast          4      1024000   0.0007939218
+                                         MPI_Bcast          5      1024000   0.0007806607
+                                         MPI_Bcast          6      1024000   0.0007776115
+                                         MPI_Bcast          7      1024000   0.0007412415
+                                         MPI_Bcast          8      1024000   0.0008094739
+                                         MPI_Bcast          9      1024000   0.0007854365
+                                         MPI_Bcast         10      1024000   0.0008075824
+                                         MPI_Bcast         11      1024000   0.0007764995
+                                         MPI_Bcast         12      1024000   0.0007345518
+                                         MPI_Bcast         13      1024000   0.0007757125
+                                         MPI_Bcast         14      1024000   0.0007651187
+                                         MPI_Bcast         15      1024000   0.0007850789
+                                         MPI_Bcast         16      1024000   0.0007497231
+                                         MPI_Bcast         17      1024000   0.0007598512
+                                         MPI_Bcast         18      1024000   0.0007556714
+                                         MPI_Bcast         19      1024000   0.0007646093
+                                      MPI_Alltoall          0      1024000   0.0304981321
+                                      MPI_Alltoall          1      1024000   0.0052087735
+                                      MPI_Alltoall          2      1024000   0.0052118385
+                                      MPI_Alltoall          3      1024000   0.0052244337
+                                      MPI_Alltoall          4      1024000   0.0052470258
+                                      MPI_Alltoall          5      1024000   0.0051403828
+                                      MPI_Alltoall          6      1024000   0.0051766951
+                                      MPI_Alltoall          7      1024000   0.0051550101
+                                      MPI_Alltoall          8      1024000   0.0051509906
+                                      MPI_Alltoall          9      1024000   0.0051562572
+                                      MPI_Alltoall         10      1024000   0.0051372983
+                                      MPI_Alltoall         11      1024000   0.0051845107
+                                      MPI_Alltoall         12      1024000   0.0052019805
+                                      MPI_Alltoall         13      1024000   0.0051057320
+                                      MPI_Alltoall         14      1024000   0.0051713474
+                                      MPI_Alltoall         15      1024000   0.0051918011
+                                      MPI_Alltoall         16      1024000   0.0051146960
+                                      MPI_Alltoall         17      1024000   0.0051251380
+                                      MPI_Alltoall         18      1024000   0.0051963506
+                                      MPI_Alltoall         19      1024000   0.0051127337
+                                     MPI_Allreduce          0      1024000   0.0019097077
+                                     MPI_Allreduce          1      1024000   0.0018500015
+                                     MPI_Allreduce          2      1024000   0.0018641213
+                                     MPI_Allreduce          3      1024000   0.0018395865
+                                     MPI_Allreduce          4      1024000   0.0018304074
+                                     MPI_Allreduce          5      1024000   0.0018359907
+                                     MPI_Allreduce          6      1024000   0.0018317970
+                                     MPI_Allreduce          7      1024000   0.0018678624
+                                     MPI_Allreduce          8      1024000   0.0017977152
+                                     MPI_Allreduce          9      1024000   0.0018432979
+                                     MPI_Allreduce         10      1024000   0.0018261280
+                                     MPI_Allreduce         11      1024000   0.0018049236
+                                     MPI_Allreduce         12      1024000   0.0018106960
+                                     MPI_Allreduce         13      1024000   0.0017992575
+                                     MPI_Allreduce         14      1024000   0.0018262696
+                                     MPI_Allreduce         15      1024000   0.0018296111
+                                     MPI_Allreduce         16      1024000   0.0018208930
+                                     MPI_Allreduce         17      1024000   0.0018214993
+                                     MPI_Allreduce         18      1024000   0.0018455507
+                                     MPI_Allreduce         19      1024000   0.0018153246
+# Benchmark started at Wed Apr 15 20:01:39 2020
+# Execution time: 0s
