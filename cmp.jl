@@ -4,6 +4,7 @@ using Printf
 struct Args
     c::String
     jl::String
+    bar::Int
 end
 
 function parse_parameters()::Args
@@ -15,6 +16,10 @@ function parse_parameters()::Args
         "--julia-output", "-j"
             help = "file in which julia output is stored"
             arg_type = String
+        "--bar-width", "-b"
+            help = "the width of a bar visualising the relative difference"
+            arg_type = Int
+            default = 10
     end
     args = parse_args(ARGS, s)
     c = args["c-output"]
@@ -26,11 +31,19 @@ function parse_parameters()::Args
     elseif jl == nothing
         jl = string("jl", c[2:end])
     end
-    Args(c, jl)
+    Args(c, jl, args["bar-width"])
 end
 
-function bar(i::Int)
-    string("[","#"^i, " "^(10-i), "]")
+function bar(rel::Float64, width::Int)
+    abs_rel = abs(rel)
+    if abs_rel >= 1
+        cnt = width
+    elseif abs_rel < 10e-9
+        cnt = 0
+    else
+        cnt = floor(Int64, width * abs_rel)
+    end
+    return string("[","#"^cnt, " "^(width-cnt), "]")
 end
 
 function main()
@@ -61,31 +74,23 @@ function main()
         end
     end
 
-    Printf.@printf "%50s %14s %14s %14s %14s %12s\n" "" "C" "Julia" "Abs Diff" "Rel Diff" "Rel as bar"
+    Printf.@printf "%50s %14s %14s %14s %14s %s\n" "" "C" "Julia" "Abs Diff" "Rel Diff" "Rel as bar"
     for (c, jl) in zip(c_val, jl_val)
         absolute = jl[2] - c[2]
         relative = absolute / c[2]
-        abs_rel = abs(relative)
-        if abs_rel >= 1
-            cnt = 10
-        elseif abs_rel < 10e-9
-            cnt = 0
-        else
-            cnt = floor(Int64, 10 * round(abs_rel, digits=1))
-        end
         if absolute < 0 # julia is faster
             if relative < -0.5 # >50% faster
-                Printf.@printf "%50s %14.10f %14.10f \e[37;42m%14.10f %14.10f %12s\e[0m\n" c[1] c[2] jl[2] absolute relative bar(cnt)
+                Printf.@printf "%50s %14.10f %14.10f \e[37;42m%14.10f %14.10f %s\e[0m\n" c[1] c[2] jl[2] absolute relative bar(relative, args.bar)
             else
-                Printf.@printf "%50s %14.10f %14.10f \e[32m%14.10f %14.10f %12s\e[0m\n" c[1] c[2] jl[2] absolute relative bar(cnt)
+                Printf.@printf "%50s %14.10f %14.10f \e[32m%14.10f %14.10f %s\e[0m\n" c[1] c[2] jl[2] absolute relative bar(relative, args.bar)
             end
         elseif abs(absolute) < 10e-9 # roughly equal
-            Printf.@printf "%50s %14.10f %14.10f %14.10f %14.10f %12s\n" c[1] c[2] jl[2] absolute relative bar(cnt)
+            Printf.@printf "%50s %14.10f %14.10f %14.10f %14.10f\n" c[1] c[2] jl[2] absolute relative
         else # c is faster
             if relative > 0.5 # >50% faster
-                Printf.@printf "%50s %14.10f %14.10f \e[37;41m%14.10f %14.10f %12s\e[0m\n" c[1] c[2] jl[2] absolute relative bar(cnt)
+                Printf.@printf "%50s %14.10f %14.10f \e[37;41m%14.10f %14.10f %s\e[0m\n" c[1] c[2] jl[2] absolute relative bar(relative, args.bar)
             else
-                Printf.@printf "%50s %14.10f %14.10f \e[31m%14.10f %14.10f %12s\e[0m\n" c[1] c[2] jl[2] absolute relative bar(cnt)
+                Printf.@printf "%50s %14.10f %14.10f \e[31m%14.10f %14.10f %s\e[0m\n" c[1] c[2] jl[2] absolute relative bar(relative, args.bar)
             end
         end
     end
